@@ -49,6 +49,16 @@ html {
     animation: pulse 3s ease-in-out infinite;
 }
 
+@keyframes wiggle {
+    0%, 100% { transform: rotate(0deg); }
+    25% { transform: rotate(-10deg); }
+    75% { transform: rotate(10deg); }
+}
+
+.animate-wiggle {
+    animation: wiggle 1s ease-in-out infinite;
+}
+
 .delay-200 {
     animation-delay: 0.2s;
 }

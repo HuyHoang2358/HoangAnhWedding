@@ -203,11 +203,97 @@
         </div>
     </section>
 
+    <!-- ========== PHẦN 4: MỪNG CƯỚI ========== -->
+    <section id="mung-cuoi" class="relative py-12 px-4">
+        <img src="{{asset('images/wedding/gallery/collect-1.JPG')}}" alt="Background" class="absolute inset-0 w-full h-full object-cover">
+        <div class="absolute inset-0 bg-black/60"></div>
+        
+        <div class="relative z-10 text-center">
+            <p class="font-script text-4xl text-white mb-2">Hộp Mừng Cưới</p>
+            <p class="text-sm text-stone-300 font-times italic mb-6">"Thay cho tấm lòng chúc phúc"</p>
+            
+            <!-- Icon hộp quà -->
+            <div id="gift-box" class="w-24 h-24 mx-auto bg-pink-500 rounded-full flex items-center justify-center cursor-pointer shadow-lg hover:scale-110 transition-transform animate-wiggle">
+                <i class="fa-solid fa-gift text-4xl text-white"></i>
+            </div>
+            <p class="text-xs text-stone-300 mt-3 font-times">Nhấn để mở</p>
+        </div>
+
+        <!-- Modal QR -->
+        <div id="qr-modal" class="fixed inset-0 bg-black/80 z-50 hidden items-center justify-center p-4">
+            <div class="bg-white rounded-2xl p-6 w-full max-w-sm relative">
+                <button id="close-modal" class="absolute top-3 right-3 text-stone-400 hover:text-stone-600">
+                    <i class="fa-solid fa-xmark text-xl"></i>
+                </button>
+                <p class="font-script text-2xl text-stone-700 text-center mb-4">Mừng Cưới</p>
+                
+                <div class="space-y-4">
+                    <!-- Chú rể -->
+                    <div class="flex items-center gap-3 p-3 bg-stone-50 rounded-xl">
+                        <img src="{{asset('images/wedding/hoangth33-qr.png')}}" alt="QR Chú rể" class="w-20 h-20">
+                        <div>
+                            <p class="text-xs text-stone-400 font-times">Chú rể</p>
+                            <p class="font-semibold text-stone-800 font-times">Trần Huy Hoàng</p>
+                            <p class="text-xs text-stone-500 font-times">BIDV - 1234567890</p>
+                        </div>
+                    </div>
+                    <!-- Cô dâu -->
+                    <div class="flex items-center gap-3 p-3 bg-stone-50 rounded-xl">
+                        <img src="{{asset('images/wedding/hoangth33-qr.png')}}" alt="QR Cô dâu" class="w-20 h-20">
+                        <div>
+                            <p class="text-xs text-stone-400 font-times">Cô dâu</p>
+                            <p class="font-semibold text-stone-800 font-times">Nguyễn Trâm Anh</p>
+                            <p class="text-xs text-stone-500 font-times">VCB - 0987654321</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <p class="text-center text-xs text-stone-400 font-times mt-4 italic">
+                    <i class="fa-solid fa-heart text-red-400"></i> Xin chân thành cảm ơn!
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="bg-white py-8 px-4 text-center">
+        <img src="{{asset('images/wedding/icon-wedding.jpg')}}" alt="Wedding Icon" class="w-32 mx-auto mb-4">
+        <p class="font-script text-3xl text-stone-700 mb-4">Thanks you!</p>
+        <p class="text-sm text-stone-600 font-times leading-relaxed px-2">
+            Chúng mình chân thành mời những người thân yêu,<br>
+            những người đã đồng hành qua bao năm tháng,<br>
+            cùng chứng kiến và sẻ chia khoảnh khắc ý nghĩa này.<br><br>
+            Nếu bạn ở xa hoặc bận rộn không thể đến,<br>
+            đừng lo, chúng mình đã nhận được lời chúc của bạn rồi!<br>
+            Chúc bạn mọi điều tốt đẹp.<br><br>
+            Còn nếu bạn có thời gian, thật tuyệt,<br>
+            hãy mang theo tâm trạng vui vẻ và chiếc bụng thật đói,<br>
+            đến chung vui cùng chúng mình nhé!<br>
+            Rất mong được gặp bạn! 💕
+        </p>
+    </footer>
+
 
 
     <script>
         document.getElementById('envelope').addEventListener('click', function() {
             this.classList.toggle('open');
+        });
+
+        // Gift box modal
+        document.getElementById('gift-box').addEventListener('click', function() {
+            document.getElementById('qr-modal').classList.remove('hidden');
+            document.getElementById('qr-modal').classList.add('flex');
+        });
+        document.getElementById('close-modal').addEventListener('click', function() {
+            document.getElementById('qr-modal').classList.add('hidden');
+            document.getElementById('qr-modal').classList.remove('flex');
+        });
+        document.getElementById('qr-modal').addEventListener('click', function(e) {
+            if (e.target === this) {
+                this.classList.add('hidden');
+                this.classList.remove('flex');
+            }
         });
 
         // Countdown
