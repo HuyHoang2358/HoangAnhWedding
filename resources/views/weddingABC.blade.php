@@ -24,11 +24,6 @@
     </button>
     <audio id="bg-music" src="{{ asset('/images/wedding/young-and-beautiful.mp3') }}" loop autoplay></audio>
 
-    <!-- RSVP Button -->
-    <a href="https://byvn.net/ieiV" target="_blank" class="fixed bottom-4 right-4 z-50 px-4 py-2 bg-[#baa58a] rounded-full flex items-center justify-center text-white shadow-lg text-sm font-quicksand animate-bounce">
-        <i class="fa-solid fa-calendar-check mr-2"></i>Đăng ký tham dự
-    </a>
-
     <!-- ========== PHẦN 1: TRANG BÌA ========== -->
     <section id="trang-bia" class="relative min-h-screen flex flex-col items-center justify-between px-6 py-8 overflow-hidden">
 
@@ -92,16 +87,16 @@
 
             <!-- Tên cô dâu chú rể -->
             <div class="mt-6 space-y-2">
-                <h2 class="text-4xl font-nautigal text-primary">Huy Hoàng</h2>
+                <h2 class="text-4xl font-nautigal text-primary">Trâm Anh</h2>
                 <div class="flex items-center justify-center gap-2 text-stone-400">
                     <img src="{{asset('images/wedding/ring.png')}}" alt="ring" class="h-6"/>
                 </div>
-                <h2 class="text-4xl font-nautigal text-primary">Trâm Anh</h2>
+                <h2 class="text-4xl font-nautigal text-primary">Huy Hoàng</h2>
             </div>
 
             <!-- Thời gian -->
             <p class="mt-8 text-sm text-stone-700 font-quicksand">
-                Vào hồi <span class="font-semibold">16 giờ 30</span>, Chủ Nhật
+                Vào hồi <span class="font-semibold">17 giờ 00</span>, Thứ Bảy
             </p>
 
             <!-- Khung thời gian & địa điểm -->
@@ -110,36 +105,29 @@
                     <!-- Thời gian (nhỏ) -->
                     <div class="text-center border-r border-stone-300 pr-4 flex flex-col justify-center">
                         <p class="text-sm text-stone-600 font-quicksand">Tháng 03</p>
-                        <p class="text-5xl font-bold text-primary my-2">22</p>
+                        <p class="text-5xl font-bold text-primary my-2">21</p>
                         <p class="text-sm text-stone-600 font-quicksand">Năm 2026</p>
                     </div>
                     <!-- Địa điểm (lớn) -->
                     <div class="text-center flex-1 flex flex-col justify-center">
                         <p class="font-script text-2xl text-stone-600 mb-2">Tại</p>
-                        <p class="font-semibold text-base uppercase text-primary font-quicksand tracking-wide">Khách Sạn Dầu Khí</p>
+                        <p class="font-semibold text-base uppercase text-primary font-quicksand tracking-wide">Tư Gia Nhà Gái</p>
                         <p class="text-xs text-stone-600 mt-2 leading-relaxed font-quicksand">
-                            Số 458 Lý Bôn - Phường Trần Hưng Đạo,<br>Tỉnh Hưng Yên
+                            Xóm Trường Thành, Xã Giao Hưng,<br>Tỉnh Ninh Bình
                         </p>
                     </div>
                 </div>
             </div>
 
             <!-- Âm lịch -->
-            <p class="text-xs text-stone-500 mt-2 font-quicksand">(Nhằm ngày 04 tháng 2 năm Bính Ngọ)</p>
+            <p class="text-xs text-stone-500 mt-2 font-quicksand">(Nhằm ngày 03 tháng 2 năm Bính Ngọ)</p>
             <!-- Button xem đường đi -->
-            <a href="https://maps.app.goo.gl/YiD46kKUjeZLzGJF9" target="_blank"
+            <a href="https://maps.app.goo.gl/GU1prJSnpayNdMLz7" target="_blank"
                class="inline-block mt-4 px-6 py-2 border border-stone-400 rounded-full text-sm text-stone-700 hover:bg-stone-100 transition font-quicksand">
                 📍 Xem đường đi
             </a>
             <!-- Thông tin nhà trai & nhà gái -->
             <div class="grid grid-cols-2 gap-4 mt-6 pt-6 border-t border-dashed border-stone-300">
-                <!-- Nhà trai -->
-                <div class="text-center">
-                    <p class="font-semibold text-primary font-quicksand mb-2">Nhà Trai</p>
-                    <p class="text-sm text-stone-600 font-quicksand font-medium">Bố: Trần Mạnh Loanh</p>
-                    <p class="text-sm text-stone-600 font-quicksand font-medium">Mẹ: Nguyễn Thị Lên</p>
-                    <p class="text-xs text-stone-500 font-quicksand mt-1">Số 220 Đường Lê Quý Đôn, Phường Thái Bình - Tỉnh Hưng Yên</p>
-                </div>
                 <!-- Nhà gái -->
                 <div class="text-center">
                     <p class="font-semibold text-primary font-quicksand mb-2">Nhà Gái</p>
@@ -147,6 +135,14 @@
                     <p class="text-sm text-stone-600 font-quicksand font-medium">Mẹ: Đỗ Thị Rậu</p>
                     <p class="text-xs text-stone-500 font-quicksand mt-1">Xóm Trường Thành, Xã Giao Hưng - Tỉnh Ninh Bình</p>
                 </div>
+                <!-- Nhà trai -->
+                <div class="text-center">
+                    <p class="font-semibold text-primary font-quicksand mb-2">Nhà Trai</p>
+                    <p class="text-sm text-stone-600 font-quicksand font-medium">Bố: Trần Mạnh Loanh</p>
+                    <p class="text-sm text-stone-600 font-quicksand font-medium">Mẹ: Nguyễn Thị Lên</p>
+                    <p class="text-xs text-stone-500 font-quicksand mt-1">Số 220 Đường Lê Quý Đôn, Phường Thái Bình - Tỉnh Hưng Yên</p>
+                </div>
+
             </div>
 
             <!-- Lời chào -->
@@ -226,7 +222,7 @@
                     <tr><td></td><td></td><td></td><td></td><td></td><td></td><td class="p-1 text-red-400">1</td></tr>
                     <tr><td class="p-1">2</td><td class="p-1">3</td><td class="p-1">4</td><td class="p-1">5</td><td class="p-1">6</td><td class="p-1">7</td><td class="p-1 text-red-400">8</td></tr>
                     <tr><td class="p-1">9</td><td class="p-1">10</td><td class="p-1">11</td><td class="p-1">12</td><td class="p-1">13</td><td class="p-1">14</td><td class="p-1 text-red-400">15</td></tr>
-                    <tr><td class="p-1">16</td><td class="p-1">17</td><td class="p-1">18</td><td class="p-1">19</td><td class="p-1">20</td><td class="p-1">21</td><td class="p-1 text-red-400 relative"><span class="relative z-10 text-white">22</span><i class="fa-solid fa-heart absolute inset-0 text-red-500 text-2xl flex items-center justify-center mt-0.5"></i></td></tr>
+                    <tr><td class="p-1">16</td><td class="p-1">17</td><td class="p-1">18</td><td class="p-1">19</td><td class="p-1">20</td><td class="p-1 relative"><span class="relative z-10 text-white">21</span><i class="fa-solid fa-heart absolute inset-0 text-red-500 text-2xl flex items-center justify-center mt-0.5"></i></td><td class="p-1 text-red-400">22</td></tr>
                     <tr><td class="p-1">23</td><td class="p-1">24</td><td class="p-1">25</td><td class="p-1">26</td><td class="p-1">27</td><td class="p-1">28</td><td class="p-1 text-red-400">29</td></tr>
                     <tr><td class="p-1">30</td><td class="p-1">31</td><td></td><td></td><td></td><td></td><td></td></tr>
                     </tbody>
@@ -281,14 +277,14 @@
                 <p class="font-nautigal text-4xl font-normal text-primary text-center mb-4">Mừng Cưới</p>
 
                 <div class="space-y-4">
-                    <!-- Chú rể -->
+                    <!-- Cô dâu -->
                     <div class="flex items-center gap-3 p-3 bg-stone-50 rounded-xl">
-                        <img src="{{asset('images/wedding/hoangth33-qr.png')}}" alt="QR Chú rể" class="w-20 h-20">
+                        <img src="{{asset('images/wedding/tram-anh-qr.png')}}" alt="QR Cô dâu" class="w-20 h-20">
                         <div>
-                            <p class="text-xs text-stone-400 font-times">Chú rể</p>
-                            <p class="font-semibold text-primary font-times">Trần Huy Hoàng</p>
-                            <p class="text-xs text-stone-500 font-times">BIDV - 2152313772</p>
-                            <a href="{{asset('images/wedding/hoangth33-qr.png')}}" download="QR-Chu-Re.png" class="inline-block mt-1 text-xs text-primary hover:underline"><i class="fa-solid fa-download mr-1"></i>Tải QR</a>
+                            <p class="text-xs text-stone-400 font-times">Cô dâu</p>
+                            <p class="font-semibold text-primary font-times">Nguyễn Trâm Anh</p>
+                            <p class="text-xs text-stone-500 font-times">TPB - 20915112358</p>
+                            <a href="{{asset('images/wedding/tram-anh-qr.png')}}" download="QR-Co-Dau.png" class="inline-block mt-1 text-xs text-primary hover:underline"><i class="fa-solid fa-download mr-1"></i>Tải QR</a>
                         </div>
                     </div>
                 </div>
@@ -359,7 +355,7 @@
         });
 
         // Countdown
-        const weddingDate = new Date('2026-03-22T17:00:00').getTime();
+        const weddingDate = new Date('2026-03-21T17:00:00').getTime();
         const updateCountdown = () => {
             const now = new Date().getTime();
             const diff = weddingDate - now;

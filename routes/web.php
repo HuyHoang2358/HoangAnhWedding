@@ -6,3 +6,7 @@ Route::get('/', function () {
     return view('wedding');
 });
 
+Route::get('/tram-anh', function () {
+    return view('weddingABC');
+});
+
