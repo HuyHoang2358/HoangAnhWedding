@@ -6,6 +6,7 @@
 
 /* ========== CẤU HÌNH THEME ========== */
 @theme {
+    --color-primary: #3a4a3a;
     --color-ivory: #FFFFF0;
     --color-champagne: #D4AF37;
     --color-beige: #F5F5DC;
@@ -14,6 +15,10 @@
     --font-serif: 'Playfair Display', serif;
     --font-sans: 'Inter', sans-serif;
     --font-times: 'Times New Roman', Times, serif;
+    --font-quicksand: 'Quicksand', sans-serif;
+    --font-nautigal: 'The Nautigal', cursive;
+    --font-story-script: 'Story Script', cursive;
+    --font-meow-script: 'Meow Script', cursive;
     --max-width-mobile: 420px;
 }
 
@@ -304,4 +309,43 @@ html {
 
 .envelope-wrapper.open .envelope-hint {
     opacity: 0;
+}
+
+/* ========== HIỆU ỨNG TRÁI TIM ========== */
+.hearts-container {
+    position: absolute;
+    top: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 10px;
+    height: 10px;
+    pointer-events: none;
+    z-index: 5;
+    overflow: visible;
+}
+
+.floating-heart {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #f87e7e;
+    text-shadow: 0 0 6px #efa4a4, 0 0 12px #f46e6e;
+}
+
+.floating-heart.left {
+    animation: floatHeartLeft 2s ease-out forwards;
+}
+
+.floating-heart.right {
+    animation: floatHeartRight 2s ease-out forwards;
+}
+
+@keyframes floatHeartLeft {
+    0% { opacity: 1; transform: translate(0, 0) scale(0.5); }
+    100% { opacity: 0; transform: translate(calc(-1 * var(--spread)), -250px) scale(1); }
+}
+
+@keyframes floatHeartRight {
+    0% { opacity: 1; transform: translate(0, 0) scale(0.5); }
+    100% { opacity: 0; transform: translate(var(--spread), -250px) scale(1); }
 }
