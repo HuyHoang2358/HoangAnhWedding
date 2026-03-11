@@ -4,6 +4,31 @@
 
 Website thiệp cưới mobile-first với giao diện sang trọng, lãng mạn cho đám cưới ngày **22.03.2026**.
 
+## Quy tắc code (Coding Rules)
+
+### 1. Ngôn ngữ
+- Sử dụng **tiếng Việt** cho tất cả nội dung hiển thị
+- Comment code bằng tiếng Việt
+
+### 2. Layout
+- Container chính: `w-full max-w-[420px] mx-auto`
+- Mobile-first, không cần responsive breakpoints
+
+### 3. Hình ảnh
+- Sử dụng helper Laravel: `{{ asset('images/wedding/...') }}`
+- Ví dụ: `<img src="{{ asset('images/wedding/hero.jpg') }}">`
+
+### 4. TailwindCSS
+- Config đặt trong `<script>tailwind.config = {...}</script>`
+- Custom CSS đặt trong `<style>` sau config Tailwind
+- Sử dụng CDN: `https://cdn.tailwindcss.com`
+
+### 5. Cấu trúc file
+```
+resources/views/wedding.blade.php  - Trang chính
+public/images/wedding/             - Thư mục ảnh
+```
+
 ## Thông tin cặp đôi
 
 - **Cô dâu:** Trâm Anh
