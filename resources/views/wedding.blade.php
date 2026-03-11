@@ -21,8 +21,8 @@
     <section id="trang-bia" class="relative min-h-screen flex flex-col items-center justify-between px-6 py-8 overflow-hidden">
 
         <!-- Trang trí hoa -->
-        <img src="{{ asset('images/wedding/flower1.jpg') }}" alt="Hoa trang trí" class="absolute top-0 left-0 w-32 pointer-events-none z-0">
-        <img src="{{ asset('images/wedding/flower2.jpg') }}" alt="Hoa trang trí" class="absolute bottom-0 right-0 w-32 pointer-events-none z-0">
+        {{--<img src="{{ asset('images/wedding/flower1.jpg') }}" alt="Hoa trang trí" class="absolute top-0 left-0 w-32 pointer-events-none z-0">
+        <img src="{{ asset('images/wedding/flower2.jpg') }}" alt="Hoa trang trí" class="absolute bottom-0 right-0 w-32 pointer-events-none z-0">--}}
 
         <!-- Dòng chữ header -->
         <div class="grid grid-cols-3 w-full max-w-xs text-center mb-4 z-10">
@@ -32,7 +32,7 @@
         </div>
 
         <!-- Tiêu đề chính -->
-        <h1 class="font-script text-6xl text-stone-800 mb-8 animate-fade-in-up">Thiệp Mời</h1>
+        <h1 class="font-script text-6xl text-[#3a4a3a] mb-8 animate-fade-in-up">Thiệp Mời</h1>
 
         <!-- Phong bì thư -->
         <div class="envelope-wrapper animate-fade-in-up delay-200" id="envelope">
@@ -43,7 +43,7 @@
             <div class="envelope">
                 <!-- Ảnh cưới (ẩn ban đầu) -->
                 <div class="envelope-photo shadow-2xl">
-                    <img src="{{ asset('images/wedding/anh-cuoi-rong.JPG') }}" alt="Cô dâu và Chú rể">
+                    <img src="{{ asset('images/wedding/anh-cuoi.JPG') }}" alt="Cô dâu và Chú rể">
                 </div>
 
                 <div class="envelope-top"></div>
@@ -51,12 +51,12 @@
                 <div class="envelope-right"></div>
                 <div class="envelope-bottom"></div>
                 <div class="envelope-seal">
-                    <span class="font-script text-amber-100 text-xs">H&A</span>
+                    <img src="{{ asset('images/wedding/seal.png') }}" alt="Cô dâu và Chú rể"/>
                 </div>
             </div>
 
             <!-- Text hướng dẫn -->
-            <p class="envelope-hint">Chạm để mở thiệp</p>
+            <p class="envelope-hint font-script">Chạm để mở thiệp</p>
 
         </div>
 
