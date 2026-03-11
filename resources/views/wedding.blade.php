@@ -139,7 +139,7 @@
             </div>
 
             <!-- Lời chào -->
-            <p class="mt-6 italic text-base text-stone-700 font-times">SỰ HIỆN DIỆN CỦA QUÝ VỤ LÀ NIỀM VINH HẠNH CHO GIA ĐÌNH CHÚNG TÔI!</p>
+            <p class="mt-6 italic text-base text-stone-700 font-times">SỰ HIỆN DIỆN CỦA QUÝ VỊ LÀ NIỀM VINH HẠNH CHO GIA ĐÌNH CHÚNG TÔI!</p>
         </div>
     </section>
 
