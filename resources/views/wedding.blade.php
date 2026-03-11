@@ -112,7 +112,7 @@
             </div>
 
             <!-- Button xem đường đi -->
-            <a href="https://maps.google.com/?q=Khách+Sạn+Dầu+Khí+Hưng+Yên" target="_blank"
+            <a href="https://maps.app.goo.gl/YiD46kKUjeZLzGJF9" target="_blank"
                class="inline-block mt-4 px-6 py-2 border border-stone-400 rounded-full text-sm text-stone-700 hover:bg-stone-100 transition font-times">
                 📍 Xem đường đi
             </a>
@@ -207,11 +207,11 @@
     <section id="mung-cuoi" class="relative py-12 px-4">
         <img src="{{asset('images/wedding/gallery/collect-1.JPG')}}" alt="Background" class="absolute inset-0 w-full h-full object-cover">
         <div class="absolute inset-0 bg-black/60"></div>
-        
+
         <div class="relative z-10 text-center">
             <p class="font-script text-4xl text-white mb-2">Hộp Mừng Cưới</p>
             <p class="text-sm text-stone-300 font-times italic mb-6">"Thay cho tấm lòng chúc phúc"</p>
-            
+
             <!-- Icon hộp quà -->
             <div id="gift-box" class="w-24 h-24 mx-auto bg-pink-500 rounded-full flex items-center justify-center cursor-pointer shadow-lg hover:scale-110 transition-transform animate-wiggle">
                 <i class="fa-solid fa-gift text-4xl text-white"></i>
@@ -226,7 +226,7 @@
                     <i class="fa-solid fa-xmark text-xl"></i>
                 </button>
                 <p class="font-script text-2xl text-stone-700 text-center mb-4">Mừng Cưới</p>
-                
+
                 <div class="space-y-4">
                     <!-- Chú rể -->
                     <div class="flex items-center gap-3 p-3 bg-stone-50 rounded-xl">
@@ -247,7 +247,7 @@
                         </div>
                     </div>
                 </div>
-                
+
                 <p class="text-center text-xs text-stone-400 font-times mt-4 italic">
                     <i class="fa-solid fa-heart text-red-400"></i> Xin chân thành cảm ơn!
                 </p>
