@@ -3,7 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <title>Huy Hoàng ♡ Trâm Anh | Thiệp Cưới</title>
+    <title>Huy Hoàng ♡ Trâm Anh | Thiệp Cưới - 22/03/2026</title>
+    <meta name="description" content="Thiệp cưới online Huy Hoàng & Trâm Anh. Lễ thành hôn diễn ra lúc 16h30 Chủ Nhật ngày 22/03/2026 tại Khách Sạn Dầu Khí, Hưng Yên.">
+    <meta name="keywords" content="thiệp cưới, wedding, Huy Hoàng, Trâm Anh, đám cưới 2026, Hưng Yên">
+    <meta name="author" content="Huy Hoàng & Trâm Anh">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="{{ url('/') }}">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ url('/') }}">
+    <meta property="og:title" content="Huy Hoàng ♡ Trâm Anh | Thiệp Cưới">
+    <meta property="og:description" content="Trân trọng kính mời bạn đến dự lễ thành hôn của chúng tôi vào ngày 22/03/2026.">
+    <meta property="og:image" content="{{ asset('images/wedding/anh-cuoi.JPG') }}">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Huy Hoàng ♡ Trâm Anh | Thiệp Cưới">
+    <meta name="twitter:description" content="Trân trọng kính mời bạn đến dự lễ thành hôn của chúng tôi vào ngày 22/03/2026.">
+    <meta name="twitter:image" content="{{ asset('images/wedding/anh-cuoi.JPG') }}">
+
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>❤️</text></svg>">
+    <link rel="apple-touch-icon" href="{{ asset('images/wedding/favicon.png') }}">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
